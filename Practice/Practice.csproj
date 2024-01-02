@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5AB03F3-24D3-4595-B8E2-FD80B60B8691}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Practice</RootNamespace>
+    <AssemblyName>Practice</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Practice.SolidI</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asynchronous\AsyncAwait.cs" />
+    <Compile Include="Asynchronous\AsyncWithoutAwait.cs" />
+    <Compile Include="LinQ\Employee.cs" />
+    <Compile Include="LinQ\LinQEmployee.cs" />
+    <Compile Include="Oops\Absraction.cs" />
+    <Compile Include="Oops\Encapsulation.cs" />
+    <Compile Include="Oops\Inheritence.cs" />
+    <Compile Include="Oops\PolyMorphism.cs" />
+    <Compile Include="Solid\SolidD\WithDIP\Doctor.cs" />
+    <Compile Include="Solid\SolidD\WithDIP\Hospital.cs" />
+    <Compile Include="Solid\SolidD\WithDIP\IWoker.cs" />
+    <Compile Include="Solid\SolidD\WithDIP\SolidD.cs" />
+    <Compile Include="Solid\SolidD\WitoutDIP\Doctor.cs" />
+    <Compile Include="Solid\SolidD\WitoutDIP\Hospital.cs" />
+    <Compile Include="Solid\SolidD\WitoutDIP\SolidD.cs" />
+    <Compile Include="Solid\SolidI\WithISP\Administrator.cs" />
+    <Compile Include="Solid\SolidI\WithISP\Doctor.cs" />
+    <Compile Include="Solid\SolidI\WithISP\IAttendMeeting.cs" />
+    <Compile Include="Solid\SolidI\WithISP\ITakeBreak.cs" />
+    <Compile Include="Solid\SolidI\WithISP\Iworker.cs" />
+    <Compile Include="Solid\SolidI\WithISP\Nurse.cs" />
+    <Compile Include="Solid\SolidI\WithISP\SolidI.cs" />
+    <Compile Include="Solid\SolidI\WithoutISP\Administrator.cs" />
+    <Compile Include="Solid\SolidI\WithoutISP\Doctor.cs" />
+    <Compile Include="Solid\SolidI\WithoutISP\IWorker.cs" />
+    <Compile Include="Solid\SolidI\WithoutISP\Nurse.cs" />
+    <Compile Include="Solid\SolidL\WithLSP\Doctor.cs" />
+    <Compile Include="Solid\SolidL\WithLSP\Patient.cs" />
+    <Compile Include="Solid\SolidL\WithLSP\Person.cs" />
+    <Compile Include="Solid\SolidL\WithLSP\SolidL.cs" />
+    <Compile Include="Solid\SolidL\WIthoutLSP\Doctor.cs" />
+    <Compile Include="Solid\SolidL\WIthoutLSP\Patient.cs" />
+    <Compile Include="Solid\SolidL\WIthoutLSP\Person.cs" />
+    <Compile Include="Solid\SolidI\WithoutISP\SolidI.cs" />
+    <Compile Include="Solid\SolidL\WIthoutLSP\SolidL.cs" />
+    <Compile Include="Solid\SolidO\Doctor.cs" />
+    <Compile Include="Solid\SolidO\Hospital.cs" />
+    <Compile Include="Solid\SolidO\HouseKeeper.cs" />
+    <Compile Include="Solid\SolidO\IStaffTreat.cs" />
+    <Compile Include="Solid\SolidO\Nurse.cs" />
+    <Compile Include="Solid\SolidO\SolidO.cs" />
+    <Compile Include="Solid\SolidS\ProcedureAdmit.cs" />
+    <Compile Include="Solid\SolidS\ProcedureReport.cs" />
+    <Compile Include="Solid\SolidS\Procedures.cs" />
+    <Compile Include="Solid\SolidS\ProcedureSurgery.cs" />
+    <Compile Include="Solid\SolidS\SolidS.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
